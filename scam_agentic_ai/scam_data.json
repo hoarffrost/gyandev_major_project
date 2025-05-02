@@ -1,0 +1,62 @@
+[
+    {
+        "query": "IPL ticket scam",
+        "response": "Fake websites mimic official IPL ticket portals to steal card details. Only buy tickets from official sources and verify URLs carefully."
+    },
+    {
+        "query": "IPL streaming scam",
+        "response": "Fraudulent sites offer free IPL match streams but redirect to phishing or malware pages. Avoid unknown streaming links and use official broadcasters."
+    },
+    {
+        "query": "WhatsApp IPL ticket giveaway",
+        "response": "Scammers promise free IPL tickets in exchange for your phone number and ask you to forward messages, harvesting personal data for future scams."
+    },
+    {
+        "query": "AI-generated celebrity investment scam",
+        "response": "Deepfake videos and fake news articles use celebrity faces to promote fraudulent crypto or stock investments. Be skeptical of investment advice from celebrities online."
+    },
+    {
+        "query": "Fake e-commerce and travel booking scam",
+        "response": "Scammers create convincing fake shopping and travel sites, especially during festivals, to steal money and data. Always verify platforms before making payments."
+    },
+    {
+        "query": "Remote access tech support fraud",
+        "response": "Fraudsters pose as tech support, ask for remote access, and steal banking info. Never share device access with unknown callers."
+    },
+    {
+        "query": "Job scam with unrealistic offers",
+        "response": "Fake recruiters offer high-paying jobs, then demand fees or personal info. Verify job offers and never pay for employment."
+    },
+    {
+        "query": "Predatory loan app scam",
+        "response": "Unregulated apps offer quick loans, then harass borrowers and steal data. Use only RBI-approved lenders."
+    },
+    {
+        "query": "Digital arrest scam",
+        "response": "Scammers impersonate police or court officials, threaten arrest, and demand money. Hang up and call 1930 to report."
+    },
+    {
+        "query": "Fake QR code scam",
+        "response": "Fraudsters replace merchant QR codes with their own to divert payments. Always verify QR codes before scanning."
+    },
+    {
+        "query": "Phishing via SMS/email",
+        "response": "Fake messages or emails trick you into sharing OTPs or banking info. Never click suspicious links or share sensitive data."
+    },
+    {
+        "query": "Fake customer care scam",
+        "response": "Scammers pose as bank or service helplines, ask for account details, and steal money. Only use official contact numbers."
+    },
+    {
+        "query": "SIM swap fraud",
+        "response": "Fraudsters get a duplicate SIM to access your OTPs and bank accounts. If your phone loses network suddenly, contact your provider immediately."
+    },
+    {
+        "query": "Fake investment app scam",
+        "response": "Apps promise high returns, show fake profits, then block withdrawals and demand more money. Research before investing and avoid unknown apps."
+    },
+    {
+        "query": "Report scam",
+        "response": "Call 1930 or visit cybercrime.gov.in to report digital financial frauds immediately."
+    }
+]
