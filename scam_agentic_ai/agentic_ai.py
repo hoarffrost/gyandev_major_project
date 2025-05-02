@@ -12,7 +12,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # currently our knowlegde base is json for simplicity.
 # getting the scam data from the json file
-with open("scam_data.json", "r") as f:
+with open("scam_agentic_ai/scam_data.json", "r") as f:
     scams_data = json.load(f)  # scams_data is deserialized into a list.
 
 
@@ -38,8 +38,9 @@ scam_awareness_agent = Agent(
     markdown=True,
 )
 
-# useage: agent.print_response("Your query here")
-scam_awareness_agent.print_response(
-    "what does digital arrest mean and how can we prevent that from scamming me?",
-    stream=True,
-)
+if __name__ == "__main__":
+    # useage: agent.print_response("Your query here")
+    scam_awareness_agent.print_response(
+        "what does digital arrest mean and how can we prevent that from scamming me?",
+        stream=True,
+    )

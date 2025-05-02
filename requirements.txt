@@ -1,1 +1,9 @@
+phidata
+python-dotenv
+packaging
+uvicorn
+groq
+google-generativeai
 flask
+googlesearch-python 
+pycountry
