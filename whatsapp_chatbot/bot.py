@@ -75,7 +75,5 @@ def send_message(recipient_id, message_text):
     return response.json()
 
 
-handler = app
-
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
