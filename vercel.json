@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "whatsapp_chatbot/bot.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "whatsapp_chatbot/bot.py"
+        }
+    ]
+}
