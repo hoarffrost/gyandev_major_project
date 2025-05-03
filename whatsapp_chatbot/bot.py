@@ -43,6 +43,17 @@ def webhook():
     return jsonify({"status": "received"}), 200
 
 
+@app.route("/webhook", methods=["GET"])
+def verify():
+    VERIFY_TOKEN = "12345"
+    if (
+        request.args.get("hub.mode") == "subscribe"
+        and request.args.get("hub.verify_token") == VERIFY_TOKEN
+    ):
+        return request.args.get("hub.challenge"), 200
+    return "Verification failed", 403
+
+
 @app.route("/")
 def landing():
     return (
@@ -63,6 +74,8 @@ def send_message(recipient_id, message_text):
     response = requests.post(API_URL, headers=headers, json=payload)
     return response.json()
 
+
+handler = app
 
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
