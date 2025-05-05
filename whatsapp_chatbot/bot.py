@@ -91,17 +91,13 @@ load_dotenv()
 app = Flask(__name__)
 
 SYSTEM_USER_ACCESS_TOKEN = os.getenv("SYSTEM_USER_ACCESS_TOKEN")
-APP_SECRET = os.getenv("APP_SECRET")
 
 # whatsapp client
 wa = WhatsApp(
     phone_id="678267122029578",
     token=SYSTEM_USER_ACCESS_TOKEN,
     server=app,
-    callback_url="https://digitalscamawarenessagenticai.vercel.app/webhook",
     verify_token="12345",
-    app_id=659316190061510,
-    app_secret=APP_SECRET,
 )
 
 
