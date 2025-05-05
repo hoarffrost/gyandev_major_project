@@ -7,4 +7,5 @@ google-generativeai
 flask
 googlesearch-python 
 pycountry
-pywa[flask]
+fastapi[standard]
+pywa[fastapi]
