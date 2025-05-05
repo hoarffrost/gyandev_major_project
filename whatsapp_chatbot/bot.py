@@ -88,15 +88,15 @@ import os
 
 load_dotenv()
 
-app = Flask(__name__)
+flask_app = Flask(__name__)
 
 SYSTEM_USER_ACCESS_TOKEN = os.getenv("SYSTEM_USER_ACCESS_TOKEN")
 
 # whatsapp client
 wa = WhatsApp(
     phone_id="678267122029578",
-    token="",
-    server=app,
+    token=SYSTEM_USER_ACCESS_TOKEN,
+    server=flask_app,
     verify_token="12345",
 )
 
@@ -104,3 +104,6 @@ wa = WhatsApp(
 @wa.on_message(filters.text)
 def new_message(_: WhatsApp, msg: types.Message):
     msg.reply("Hello from PyWa!")
+
+
+flask_app.run()
