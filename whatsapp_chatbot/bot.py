@@ -95,7 +95,7 @@ SYSTEM_USER_ACCESS_TOKEN = os.getenv("SYSTEM_USER_ACCESS_TOKEN")
 # whatsapp client
 wa = WhatsApp(
     phone_id="678267122029578",
-    token="EAAJXpQNNo8YBO2vBt48Y5mculPXwC9NFNxhSBz4T5ejrGfuV9kfrNzbPg7eZAIPAPj4i8kkWJW5fTrFcgzHNXp7gpqF4OQkkwMHxeadTdTErwdaApiS9cOhBwZBKMQnW3eZAl8NS7knNTQM2wTj23WT22IY8q1cwaB0udO9oT6f09RSkpZCWZCtrd9DANNcVpF4eYZC8P5ZBm9VbvZCRm56ro6xyscYZD",
+    token="",
     server=app,
     verify_token="12345",
 )
