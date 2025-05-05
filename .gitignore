@@ -178,3 +178,4 @@ cython_debug/
 # database files:
 */.tmp
 tmp/
+.vercel

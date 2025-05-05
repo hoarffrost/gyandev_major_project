@@ -7,3 +7,4 @@ google-generativeai
 flask
 googlesearch-python 
 pycountry
+pywa[flask]

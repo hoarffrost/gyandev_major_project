@@ -1,7 +1,4 @@
-from flask import Flask, request, jsonify
-import requests
-
-import sys
+"""import sys
 import os
 
 # Get the parent directory of the current file
@@ -11,9 +8,13 @@ parent_dir = os.path.dirname(current_dir)
 # Add the parent directory to sys.path
 sys.path.append(parent_dir)
 
+from flask import Flask, request, jsonify
+import requests
+
 from scam_agentic_ai.agentic_ai import (
     scam_awareness_agent,
 )  # Import the agent from agentic_ai.py
+
 
 app = Flask(__name__)
 
@@ -43,6 +44,7 @@ def webhook():
     return jsonify({"status": "received"}), 200
 
 
+# meta cloud api, will send the request to fetch the hub.verify_token i have given there.
 @app.route("/webhook", methods=["GET"])
 def verify():
     VERIFY_TOKEN = "12345"
@@ -77,3 +79,32 @@ def send_message(recipient_id, message_text):
 
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
+"""
+
+from pywa import WhatsApp, filters, types
+from flask import Flask, request, jsonify
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+app = Flask(__name__)
+
+SYSTEM_USER_ACCESS_TOKEN = os.getenv("SYSTEM_USER_ACCESS_TOKEN")
+APP_SECRET = os.getenv("APP_SECRET")
+
+# whatsapp client
+wa = WhatsApp(
+    phone_id="678267122029578",
+    token=SYSTEM_USER_ACCESS_TOKEN,
+    server=app,
+    callback_url="https://digitalscamawarenessagenticai.vercel.app/",
+    verify_token="12345",
+    app_id=659316190061510,
+    app_secret=APP_SECRET,
+)
+
+
+@wa.on_message(filters.text)
+def new_message(_: WhatsApp, msg: types.Message):
+    msg.reply("Hello from PyWa!")
