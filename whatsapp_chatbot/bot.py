@@ -104,6 +104,3 @@ wa = WhatsApp(
 @wa.on_message(filters.text)
 def new_message(_: WhatsApp, msg: types.Message):
     msg.reply("Hello from PyWa!")
-
-
-flask_app.run()
