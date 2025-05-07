@@ -9,3 +9,5 @@ googlesearch-python
 pycountry
 fastapi[standard]
 pywa[fastapi]
+exa-py
+SQLAlchemy
